@@ -855,6 +855,30 @@ header, .site-header, .top-nav, nav.main-nav {
 .venue-location{max-width:900px;margin:1rem auto 1.4rem;padding:1rem 1.1rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;border:1px solid rgba(91,40,125,.18);border-left:4px solid #5b287d;background:#faf8fc;border-radius:8px}
 .venue-location div{display:grid;gap:.15rem}.venue-eyebrow{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:#6b348d;font-weight:800}.venue-location strong{color:#172a52;font-size:1.05rem}.venue-location span{color:#5a6272}.venue-location a{white-space:nowrap;text-decoration:none;font-weight:800;color:#fff;background:#5b287d;padding:.7rem .85rem;border-radius:7px}
 @media(max-width:650px){.venue-location{align-items:stretch;flex-direction:column}.venue-location a{text-align:center}}
+</style><style>
+.launch-now-section,.coming-up-section{padding:56px 20px;background:#fff}
+.launch-now-wrap,.coming-up-wrap{max-width:1120px;margin:0 auto}
+.launch-now-head,.coming-up-wrap>h2,.coming-intro{text-align:center}
+.launch-now-head h2,.coming-up-wrap>h2{color:#10254A;margin:.35rem 0 .6rem}
+.launch-now-head p,.coming-intro{color:#596176;max-width:760px;margin:.2rem auto 1.5rem}
+.launch-now-grid,.coming-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.launch-now-card,.coming-grid article{border:1px solid #e7dfea;border-radius:16px;padding:22px;background:#fff;box-shadow:0 8px 24px rgba(16,37,74,.05)}
+.launch-now-card h3,.coming-grid h3{margin:.35rem 0 .5rem;color:#5b287d}
+.launch-now-card p,.coming-grid p{margin:0;color:#5a6274;line-height:1.55}
+.launch-now-time{display:inline-block;font-weight:800;color:#1f6d42;background:#eef8f1;border-radius:999px;padding:.35rem .65rem}
+.launch-now-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+.coming-up-section{background:#fbf8fc}
+.coming-grid{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:20px}
+.coming-cta{display:table;margin:22px auto 0}
+.work-routes-launch{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}
+.work-routes-launch article{padding:18px;border:1px solid #e7dfea;border-radius:14px;background:#fff}
+.work-routes-launch h3{margin:0 0 .45rem;color:#10254A}
+.work-routes-launch p{color:#5a6274}
+.work-routes-launch a{font-weight:800;color:#5b287d;text-decoration:none}
+@media(max-width:780px){
+ .launch-now-grid,.coming-grid,.work-routes-launch{grid-template-columns:1fr}
+ .launch-now-section,.coming-up-section{padding:42px 16px}
+}
 </style></head>
 <body>
 <header class="site-header">
@@ -1051,21 +1075,38 @@ header, .site-header, .top-nav, nav.main-nav {
 </article>
 </div>
 </div>
-</section><section class="section resources-section" id="resources">
+</section>
+<section class="coming-up-section" id="coming-up">
+<div class="coming-up-wrap">
+<div class="eyebrow">COMING UP AT SPARK &amp; SPECTRUM</div>
+<h2>Register interest in what’s coming next</h2>
+<p class="coming-intro">Some offers are starting now, while others are in development. Registering interest helps us plan dates, locations and demand.</p>
+<div class="coming-grid">
+<article><h3>After-School Club</h3><p>Structured after-school provision with games, homework time, food and play.</p></article>
+<article><h3>Sensory Response</h3><p>Mobile sensory provision for community use, family support, schools and organisations.</p></article>
+<article><h3>School Programmes &amp; Support</h3><p>Neurodiversity-aware programmes, pupil support, parent sessions and staff workshops.</p></article>
+<article><h3>Children &amp; Young People</h3><p>Upcoming groups, connection spaces and practical activities for children and young people.</p></article>
+<article><h3>Parent &amp; Carer Programmes</h3><p>Workshops, groups and supportive spaces focused on understanding, capacity and practical support.</p></article>
+<article><h3>Community &amp; Organisation Partnerships</h3><p>Commissioned sessions, partnership delivery, venue collaborations and local projects.</p></article>
+</div>
+<a class="btn primary coming-cta" href="#enquiry-hub-v6">Tell us what you’re interested in</a>
+</div>
+</section>
+<section class="section resources-section" id="resources">
 <div class="container">
 <div class="eyebrow">SPARK &amp; SPECTRUM RESOURCE HUB</div>
 <h2 class="section-title">Practical resources for real life</h2><div style="max-width:900px;margin:0 auto 24px;padding:14px 18px;border-left:4px solid #D89A17;background:#fffaf0;color:#263150;font-weight:650;line-height:1.45">Free resources open as A4 PDFs. On iPhone, tap the Share icon after the PDF opens and choose “Save to Files” if you want to keep a copy.</div>
 <p class="section-intro">Clear, useful tools to help families understand needs, prepare for meetings and navigate SEND with more confidence. We are building this library carefully — useful first, not overwhelming.</p>
 <div class="resource-signup" style="max-width:900px;margin:0 auto 28px;padding:20px 22px;border:1px solid #e5dcec;border-radius:16px;background:#fff;box-shadow:0 8px 24px rgba(16,37,74,.06)">
-  <div class="eyebrow" style="margin-bottom:6px">GET NEW SPARK RESOURCES</div>
-  <p style="margin:0 0 14px;color:#263150">Want new practical SEND and neurodiversity resources by email? Join the resource list. The PDFs below remain free to open without signing up.</p>
-  <form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" target="formsubmit-frame" onsubmit="showSparkThanks()" style="display:grid;grid-template-columns:1fr 1.2fr auto;gap:10px;align-items:end">
-    <input name="_subject" type="hidden" value="Spark &amp; Spectrum — New resource signup"/>
-    <input name="_captcha" type="hidden" value="false"/>
-    <label>First name<input name="name" required></label>
-    <label>Email<input name="email" type="email" required></label>
-    <button type="submit">Keep me updated</button>
-  </form>
+<div class="eyebrow" style="margin-bottom:6px">GET NEW SPARK RESOURCES</div>
+<p style="margin:0 0 14px;color:#263150">Want new practical SEND and neurodiversity resources by email? Join the resource list. The PDFs below remain free to open without signing up.</p>
+<form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" onsubmit="showSparkThanks()" style="display:grid;grid-template-columns:1fr 1.2fr auto;gap:10px;align-items:end" target="formsubmit-frame">
+<input name="_subject" type="hidden" value="Spark &amp; Spectrum — New resource signup"/>
+<input name="_captcha" type="hidden" value="false"/>
+<label>First name<input name="name" required=""/></label>
+<label>Email<input name="email" required="" type="email"/></label>
+<button type="submit">Keep me updated</button>
+</form>
 </div><div class="resource-download-help">Resources open in a new tab so you can keep this website open. On iPhone/iPad, use Share → Save to Files.</div>
 <div aria-label="Resource categories" class="resource-filter" role="tablist">
 <a class="resource-tab active" href="#resources">All resources</a>
@@ -1210,18 +1251,44 @@ header, .site-header, .top-nav, nav.main-nav {
 </div>
 </div>
 </section>
-</main><section class="quick-access" id="quick-access">
+</main>
+<section class="launch-now-section" id="starting-september">
+<div class="launch-now-wrap">
+<div class="launch-now-head">
+<div class="eyebrow">STARTING THIS SEPTEMBER</div>
+<h2>Join us on Tuesdays at Derby Women’s Centre</h2>
+<p>Two practical, welcoming sessions for parents and carers — register your interest now.</p>
+</div>
+<div class="launch-now-grid">
+<article class="launch-now-card">
+<div class="launch-now-time">10:00–11:00</div>
+<h3>Empowered Mind Circle</h3>
+<p>Mindset, creativity, connection and a SEND-friendly coffee morning for parents and carers.</p>
+</article>
+<article class="launch-now-card">
+<div class="launch-now-time">11:00–12:00</div>
+<h3>SEND Paperwork Without the Panic</h3>
+<p>Practical support to understand, organise and work through SEND paperwork with more confidence.</p>
+</article>
+</div>
+<div class="launch-now-actions">
+<a class="btn primary launch-join" href="#enquiry-hub-v6">Join a Tuesday Session</a>
+<a class="btn secondary" href="https://form.jotform.com/262165407296057" rel="noopener" target="_blank">Paperwork Enquiry ↗</a>
+</div>
+</div>
+</section>
+<section class="quick-access" id="quick-access">
 <div class="quick-access-inner">
 <span class="quick-label">Quick access</span>
-<a href="https://form.jotform.com/262165407296057" rel="noopener" target="_blank">Paperwork Enquiry ↗</a>
+<a href="#enquiry-hub-v6">Join Something</a>
+<a href="https://form.jotform.com/262165407296057" rel="noopener" target="_blank">Get SEND Support ↗</a>
+<a href="#work-with-us">Work With Us</a>
 <a href="#resources">Free Resources</a>
-<a href="#enquiry-hub-v6">Register Interest in Services</a>
-<a href="#programme-enquiry">Programme Enquiry</a>
 </div>
 </section>
 <section class="section enquiry-hub" id="enquiry-hub-v6">
 <div class="eyebrow">ENQUIRIES &amp; INTEREST</div><h2 class="section-title">Tell us what you need</h2>
-<p>Choose the route that best matches your enquiry. Each form is labelled so we know exactly what you are contacting us about.</p>
+<p>One short form for programmes, groups, workshops and upcoming offers. If you are not sure what fits, choose “I’m not sure” and we’ll help route you.</p>
 <div class="enquiry-grid">
 <div class="enquiry-card" id="programme-enquiry">
 <div class="paperwork-direct">
@@ -1229,14 +1296,14 @@ header, .site-header, .top-nav, nav.main-nav {
 <span>Use our dedicated first-contact form.</span>
 <a href="https://form.jotform.com/262165407296057" rel="noopener" target="_blank">Open Paperwork Enquiry ↗</a>
 </div>
-<h3>Programme enquiry</h3><form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" target="formsubmit-frame" onsubmit="showSparkThanks()"><input name="_subject" type="hidden" value="Spark &amp; Spectrum — Programme enquiry"/><label>Name<input name="name" required=""/></label><label>Email<input name="email" required="" type="email"/></label><label>Mobile / WhatsApp number <span style="font-weight:500">(optional)</span><input name="whatsapp" type="tel" inputmode="tel"/></label><label>Preferred contact<select name="preferred_contact"><option>Email</option><option>WhatsApp</option><option>Phone</option></select></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="whatsapp_group" type="checkbox" value="Yes — please send me the WhatsApp community link" style="width:auto;margin-top:4px"/><span>I’d like to receive the link to join the Spark &amp; Spectrum WhatsApp community.</span></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="contact_consent" type="checkbox" value="Yes" required style="width:auto;margin-top:4px"/><span>I’m happy for Spark &amp; Spectrum CIC to contact me about this enquiry.</span></label><label>Programme<select name="programme"><option>SEND Paperwork Without the Panic</option><option>Empowered Mind Circle</option><option>Understanding Your Spark</option><option>Walk, Talk &amp; Connect</option><option>Family, School &amp; Community Partnership</option><option>Other / not sure</option></select></label><label>How can we help?<textarea name="message" rows="4"></textarea></label><button type="submit">Send programme enquiry</button><input name="_captcha" type="hidden" value="false"/></form></div>
-<div class="enquiry-card" id="event-interest"><h3>Event / meet-up interest</h3><form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" target="formsubmit-frame" onsubmit="showSparkThanks()"><input name="_subject" type="hidden" value="Spark &amp; Spectrum — Event interest"/><label>Name<input name="name" required=""/></label><label>Email<input name="email" required="" type="email"/></label><label>Mobile / WhatsApp number <span style="font-weight:500">(optional)</span><input name="whatsapp" type="tel" inputmode="tel"/></label><label>Preferred contact<select name="preferred_contact"><option>Email</option><option>WhatsApp</option><option>Phone</option></select></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="whatsapp_group" type="checkbox" value="Yes — please send me the WhatsApp community link" style="width:auto;margin-top:4px"/><span>I’d like to receive the link to join the Spark &amp; Spectrum WhatsApp community.</span></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="contact_consent" type="checkbox" value="Yes" required style="width:auto;margin-top:4px"/><span>I’m happy for Spark &amp; Spectrum CIC to contact me about this enquiry.</span></label><label>Event or meet-up<input name="event" placeholder="e.g. Chai Meet-Up, Sight Support"/></label><button type="submit">Register event interest</button><input name="_captcha" type="hidden" value="false"/></form></div>
-<div class="enquiry-card" id="resource-interest"><h3>Resource interest / waiting list</h3><form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" target="formsubmit-frame" onsubmit="showSparkThanks()"><input name="_subject" type="hidden" value="Spark &amp; Spectrum — Resource interest"/><label>Name<input name="name" required=""/></label><label>Email<input name="email" required="" type="email"/></label><label>Mobile / WhatsApp number <span style="font-weight:500">(optional)</span><input name="whatsapp" type="tel" inputmode="tel"/></label><label>Preferred contact<select name="preferred_contact"><option>Email</option><option>WhatsApp</option><option>Phone</option></select></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="whatsapp_group" type="checkbox" value="Yes — please send me the WhatsApp community link" style="width:auto;margin-top:4px"/><span>I’d like to receive the link to join the Spark &amp; Spectrum WhatsApp community.</span></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="contact_consent" type="checkbox" value="Yes" required style="width:auto;margin-top:4px"/><span>I’m happy for Spark &amp; Spectrum CIC to contact me about this enquiry.</span></label><label>Resource<input name="resource" placeholder="Resource or toolkit name"/></label><button type="submit">Join resource list</button><input name="_captcha" type="hidden" value="false"/></form><p class="enquiry-note">Approved free PDFs remain available directly in the Resource Hub.</p></div>
-<div class="enquiry-card" id="membership-interest"><h3>Spark Support Hub membership</h3><form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" target="formsubmit-frame" onsubmit="showSparkThanks()"><input name="_subject" type="hidden" value="Spark &amp; Spectrum — Membership interest"/><label>Name<input name="name" required=""/></label><label>Email<input name="email" required="" type="email"/></label><label>Mobile / WhatsApp number <span style="font-weight:500">(optional)</span><input name="whatsapp" type="tel" inputmode="tel"/></label><label>Preferred contact<select name="preferred_contact"><option>Email</option><option>WhatsApp</option><option>Phone</option></select></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="whatsapp_group" type="checkbox" value="Yes — please send me the WhatsApp community link" style="width:auto;margin-top:4px"/><span>I’d like to receive the link to join the Spark &amp; Spectrum WhatsApp community.</span></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="contact_consent" type="checkbox" value="Yes" required style="width:auto;margin-top:4px"/><span>I’m happy for Spark &amp; Spectrum CIC to contact me about this enquiry.</span></label><button type="submit">Join founding-member list</button><input name="_captcha" type="hidden" value="false"/></form></div>
-<div class="enquiry-card" id="referral-enquiry"><h3>Refer a family</h3><form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" target="formsubmit-frame" onsubmit="showSparkThanks()"><input name="_subject" type="hidden" value="Spark &amp; Spectrum — Family referral enquiry"/><label>Your name<input name="name" required=""/></label><label>Your email<input name="email" required="" type="email"/></label><label>Organisation (if relevant)<input name="organisation"/></label><label>How can we help?<textarea name="message" rows="4"></textarea></label><button type="submit">Send referral enquiry</button><input name="_captcha" type="hidden" value="false"/></form></div>
-<div class="enquiry-card" id="partner-enquiry"><h3>Schools, partners &amp; organisations</h3><form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" target="formsubmit-frame" onsubmit="showSparkThanks()"><input name="_subject" type="hidden" value="Spark &amp; Spectrum — Partnership / commissioned work"/><label>Name<input name="name" required=""/></label><label>Email<input name="email" required="" type="email"/></label><label>Mobile / phone number <span style="font-weight:500">(optional)</span><input name="phone" type="tel" inputmode="tel"/></label><label>Preferred contact<select name="preferred_contact"><option>Email</option><option>Phone</option></select></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="contact_consent" type="checkbox" value="Yes" required style="width:auto;margin-top:4px"/><span>I’m happy for Spark &amp; Spectrum CIC to contact me about this enquiry.</span></label><label>Mobile / phone number <span style="font-weight:500">(optional)</span><input name="phone" type="tel" inputmode="tel"/></label><label>Preferred contact<select name="preferred_contact"><option>Email</option><option>Phone</option></select></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="contact_consent" type="checkbox" value="Yes" required style="width:auto;margin-top:4px"/><span>I’m happy for Spark &amp; Spectrum CIC to contact me about this enquiry.</span></label><label>Organisation<input name="organisation"/></label><label>Enquiry type<select name="enquiry_type"><option>Partner with us</option><option>Invite us to your setting</option><option>Support / sponsor a programme</option><option>Commissioned work</option><option>Other</option></select></label><label>Tell us more<textarea name="message" rows="4"></textarea></label><button type="submit">Send partnership enquiry</button><input name="_captcha" type="hidden" value="false"/></form></div>
+<h3>Programme enquiry</h3><form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" onsubmit="showSparkThanks()" target="formsubmit-frame"><input name="_subject" type="hidden" value="Spark &amp; Spectrum — Programme enquiry"><label>Name<input name="name" required=""/></label><label>Email<input name="email" required="" type="email"/></label><label>Mobile / WhatsApp number <span style="font-weight:500">(optional)</span><input inputmode="tel" name="whatsapp" type="tel"/></label><label>Preferred contact<select name="preferred_contact"><option>Email</option><option>WhatsApp</option><option>Phone</option></select></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="whatsapp_group" style="width:auto;margin-top:4px" type="checkbox" value="Yes — please send me the WhatsApp community link"/><span>I’d like to receive the link to join the Spark &amp; Spectrum WhatsApp community.</span></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="contact_consent" required="" style="width:auto;margin-top:4px" type="checkbox" value="Yes"/><span>I’m happy for Spark &amp; Spectrum CIC to contact me about this enquiry.</span></label><label>Programme<select name="programme"><option value="">Please choose</option><option value="Empowered Mind Circle — Tuesdays from September">Empowered Mind Circle — Tuesdays from September</option><option value="SEND Paperwork Without the Panic — Tuesdays from September">SEND Paperwork Without the Panic — Tuesdays from September</option><option value="Walk, Talk &amp; Connect">Walk, Talk &amp; Connect</option><option value="After-School Club">After-School Club</option><option value="Children &amp; Young People's Programmes">Children &amp; Young People's Programmes</option><option value="Parent / Carer Programmes &amp; Workshops">Parent / Carer Programmes &amp; Workshops</option><option value="SEND / Neurodiversity Workshops">SEND / Neurodiversity Workshops</option><option value="Sensory Response — mobile sensory vehicle hire / interest">Sensory Response — mobile sensory vehicle hire / interest</option><option value="School Programmes &amp; Support">School Programmes &amp; Support</option><option value="Staff Training / Workshops">Staff Training / Workshops</option><option value="Community or Organisation Partnership">Community or Organisation Partnership</option><option value="Sight Support Meet-up Sessions">Sight Support Meet-up Sessions</option><option value="Chai Meet-up">Chai Meet-up</option><option value="Girls' Group / Girls Code Connect">Girls' Group / Girls Code Connect</option><option value="Boys' Group — future interest">Boys' Group — future interest</option><option value="Gaming Van / mobile gaming provision">Gaming Van / mobile gaming provision</option><option value="Membership / Spark Support Hub">Membership / Spark Support Hub</option><option value="Something else">Something else</option><option value="I'm not sure what I need">I'm not sure what I need</option></select></label><label>How can we help?<textarea name="message" rows="4"></textarea></label><button type="submit">Send programme enquiry</button><input name="_captcha" type="hidden" value="false"/></input></form></div>
+<div class="enquiry-card" id="event-interest"><h3>Event / meet-up interest</h3><form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" onsubmit="showSparkThanks()" target="formsubmit-frame"><input name="_subject" type="hidden" value="Spark &amp; Spectrum — Event interest"/><label>Name<input name="name" required=""/></label><label>Email<input name="email" required="" type="email"/></label><label>Mobile / WhatsApp number <span style="font-weight:500">(optional)</span><input inputmode="tel" name="whatsapp" type="tel"/></label><label>Preferred contact<select name="preferred_contact"><option>Email</option><option>WhatsApp</option><option>Phone</option></select></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="whatsapp_group" style="width:auto;margin-top:4px" type="checkbox" value="Yes — please send me the WhatsApp community link"/><span>I’d like to receive the link to join the Spark &amp; Spectrum WhatsApp community.</span></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="contact_consent" required="" style="width:auto;margin-top:4px" type="checkbox" value="Yes"/><span>I’m happy for Spark &amp; Spectrum CIC to contact me about this enquiry.</span></label><label>Event or meet-up<input name="event" placeholder="e.g. Chai Meet-Up, Sight Support"/></label><button type="submit">Register event interest</button><input name="_captcha" type="hidden" value="false"/></form></div>
+<div class="enquiry-card" id="resource-interest"><h3>Resource interest / waiting list</h3><form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" onsubmit="showSparkThanks()" target="formsubmit-frame"><input name="_subject" type="hidden" value="Spark &amp; Spectrum — Resource interest"/><label>Name<input name="name" required=""/></label><label>Email<input name="email" required="" type="email"/></label><label>Mobile / WhatsApp number <span style="font-weight:500">(optional)</span><input inputmode="tel" name="whatsapp" type="tel"/></label><label>Preferred contact<select name="preferred_contact"><option>Email</option><option>WhatsApp</option><option>Phone</option></select></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="whatsapp_group" style="width:auto;margin-top:4px" type="checkbox" value="Yes — please send me the WhatsApp community link"/><span>I’d like to receive the link to join the Spark &amp; Spectrum WhatsApp community.</span></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="contact_consent" required="" style="width:auto;margin-top:4px" type="checkbox" value="Yes"/><span>I’m happy for Spark &amp; Spectrum CIC to contact me about this enquiry.</span></label><label>Resource<input name="resource" placeholder="Resource or toolkit name"/></label><button type="submit">Join resource list</button><input name="_captcha" type="hidden" value="false"/></form><p class="enquiry-note">Approved free PDFs remain available directly in the Resource Hub.</p></div>
+<div class="enquiry-card" id="membership-interest"><h3>Spark Support Hub membership</h3><form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" onsubmit="showSparkThanks()" target="formsubmit-frame"><input name="_subject" type="hidden" value="Spark &amp; Spectrum — Membership interest"/><label>Name<input name="name" required=""/></label><label>Email<input name="email" required="" type="email"/></label><label>Mobile / WhatsApp number <span style="font-weight:500">(optional)</span><input inputmode="tel" name="whatsapp" type="tel"/></label><label>Preferred contact<select name="preferred_contact"><option>Email</option><option>WhatsApp</option><option>Phone</option></select></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="whatsapp_group" style="width:auto;margin-top:4px" type="checkbox" value="Yes — please send me the WhatsApp community link"/><span>I’d like to receive the link to join the Spark &amp; Spectrum WhatsApp community.</span></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="contact_consent" required="" style="width:auto;margin-top:4px" type="checkbox" value="Yes"/><span>I’m happy for Spark &amp; Spectrum CIC to contact me about this enquiry.</span></label><button type="submit">Join founding-member list</button><input name="_captcha" type="hidden" value="false"/></form></div>
+<div class="enquiry-card" id="referral-enquiry"><h3>Refer a family</h3><form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" onsubmit="showSparkThanks()" target="formsubmit-frame"><input name="_subject" type="hidden" value="Spark &amp; Spectrum — Family referral enquiry"/><label>Your name<input name="name" required=""/></label><label>Your email<input name="email" required="" type="email"/></label><label>Organisation (if relevant)<input name="organisation"/></label><label>How can we help?<textarea name="message" rows="4"></textarea></label><button type="submit">Send referral enquiry</button><input name="_captcha" type="hidden" value="false"/></form></div>
+<div class="enquiry-card" id="partner-enquiry"><h3>Schools, partners &amp; organisations</h3><form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" onsubmit="showSparkThanks()" target="formsubmit-frame"><input name="_subject" type="hidden" value="Spark &amp; Spectrum — Partnership / commissioned work"/><label>Name<input name="name" required=""/></label><label>Email<input name="email" required="" type="email"/></label><label>Mobile / phone number <span style="font-weight:500">(optional)</span><input inputmode="tel" name="phone" type="tel"/></label><label>Preferred contact<select name="preferred_contact"><option>Email</option><option>Phone</option></select></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="contact_consent" required="" style="width:auto;margin-top:4px" type="checkbox" value="Yes"/><span>I’m happy for Spark &amp; Spectrum CIC to contact me about this enquiry.</span></label><label>Mobile / phone number <span style="font-weight:500">(optional)</span><input inputmode="tel" name="phone" type="tel"/></label><label>Preferred contact<select name="preferred_contact"><option>Email</option><option>Phone</option></select></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="contact_consent" required="" style="width:auto;margin-top:4px" type="checkbox" value="Yes"/><span>I’m happy for Spark &amp; Spectrum CIC to contact me about this enquiry.</span></label><label>Organisation<input name="organisation"/></label><label>Enquiry type<select name="enquiry_type"><option>Partner with us</option><option>Invite us to your setting</option><option>Support / sponsor a programme</option><option>Commissioned work</option><option>Other</option></select></label><label>Tell us more<textarea name="message" rows="4"></textarea></label><button type="submit">Send partnership enquiry</button><input name="_captcha" type="hidden" value="false"/></form></div>
 </div>
-</section><section id="form-success" hidden style="max-width:900px;margin:30px auto;padding:26px;border-radius:18px;background:#f7f2fa;border:1px solid #e2d6ea;text-align:center"><div class="eyebrow">THANK YOU</div><h2 style="margin:6px 0 8px;color:#10254A">We’ve received your details.</h2><p style="margin:0;color:#263150">Thank you for contacting Spark &amp; Spectrum CIC. Your submission has been sent to our team.</p></section><footer id="contact">
+</section><section hidden="" id="form-success" style="max-width:900px;margin:30px auto;padding:26px;border-radius:18px;background:#f7f2fa;border:1px solid #e2d6ea;text-align:center"><div class="eyebrow">THANK YOU</div><h2 style="margin:6px 0 8px;color:#10254A">We’ve received your details.</h2><p style="margin:0;color:#263150">Thank you for contacting Spark &amp; Spectrum CIC. Your submission has been sent to our team.</p></section><footer id="contact">
 <div class="venue-location">
 <div><span class="venue-eyebrow">Community venue</span><strong>Derby Women's Centre</strong><span>4 Leopold Street, Derby, DE1 2HE</span></div>
 <a href="https://www.google.com/maps/search/?api=1&amp;query=Derby+Women%27s+Centre%2C+4+Leopold+Street%2C+Derby%2C+DE1+2HE" rel="noopener" target="_blank">Open in Google Maps ↗</a>
@@ -1336,11 +1403,10 @@ section[id],[id]{scroll-margin-top:calc(var(--spark-fixed-header) + 14px)!import
 }
 </style>
 <nav aria-label="Quick actions" class="action-dock">
-<a class="dock-paperwork" href="https://form.jotform.com/262165407296057" rel="noopener" target="_blank">Paperwork Enquiry ↗</a>
-<a class="dock-resources" href="#resources">Free Resources</a>
-<a class="dock-register" href="#enquiry-hub-v6">Register Interest in Services</a>
+<a class="dock-register" href="#enquiry-hub-v6">Join Something</a>
+<a class="dock-paperwork" href="https://form.jotform.com/262165407296057" rel="noopener" target="_blank">Get SEND Support ↗</a>
+<a class="dock-resources" href="#work-with-us">Work With Us</a>
 </nav>
-
 <script>
 function showSparkThanks(){
   setTimeout(function(){
