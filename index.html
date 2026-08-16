@@ -895,6 +895,73 @@ header, .site-header, .top-nav, nav.main-nav {
 </style><style>
 #starting-september{margin-top:0!important}
 #membership-interest{margin-top:0!important}
+</style><style>
+.top-email-signup{
+  padding:22px 20px 30px;
+  background:#fff;
+}
+.top-email-signup-inner{
+  max-width:1120px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1.35fr 1fr;
+  gap:22px;
+  align-items:center;
+  border:1px solid #e7dfea;
+  border-radius:16px;
+  padding:20px 22px;
+  box-shadow:0 8px 24px rgba(16,37,74,.05);
+}
+.top-email-signup h3{
+  margin:.25rem 0 .35rem;
+  color:#10254A;
+}
+.top-email-signup p{
+  margin:0;
+  color:#5a6274;
+}
+.top-email-signup form{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:10px;
+  align-items:center;
+}
+.top-email-signup input{
+  min-height:46px;
+  padding:0 14px;
+  border:1px solid #d9cde3;
+  border-radius:10px;
+  font:inherit;
+}
+.top-email-signup button{
+  min-height:46px;
+  padding:0 18px;
+  border:0;
+  border-radius:10px;
+  background:#67369A;
+  color:#fff;
+  font-weight:800;
+  cursor:pointer;
+}
+.sept-register-btn{
+  display:inline-flex!important;
+  align-items:center;
+  justify-content:center;
+  min-height:46px;
+  padding:0 20px!important;
+  border-radius:10px!important;
+  background:#67369A!important;
+  color:#fff!important;
+  text-decoration:none!important;
+  font-weight:800!important;
+}
+body{padding-bottom:120px!important;}
+@media(max-width:780px){
+  .top-email-signup-inner{grid-template-columns:1fr}
+  .top-email-signup form{grid-template-columns:1fr}
+  .top-email-signup button{width:100%}
+  body{padding-bottom:140px!important;}
+}
 </style></head>
 <body>
 <header class="site-header">
@@ -925,11 +992,27 @@ header, .site-header, .top-nav, nav.main-nav {
 </article>
 </div>
 <div class="launch-now-actions">
-<a class="btn primary launch-join" href="#enquiry-hub-v6">Register for September Sessions</a>
+<a class="btn primary launch-join sept-register-btn" href="#enquiry-hub-v6">Register for September Sessions</a>
 <a class="btn secondary" href="https://form.jotform.com/262165407296057" rel="noopener" target="_blank">Paperwork Enquiry ↗</a>
 </div>
 </div>
-</section><div class="enquiry-card" id="membership-interest"><h3>Spark Support Hub membership</h3><form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" onsubmit="showSparkThanks()" target="formsubmit-frame"><input name="_subject" type="hidden" value="Spark &amp; Spectrum — Membership interest"/><label>Name<input name="name" required=""/></label><label>Email<input name="email" required="" type="email"/></label><label>Mobile / WhatsApp number <span style="font-weight:500">(optional)</span><input inputmode="tel" name="whatsapp" type="tel"/></label><label>Preferred contact<select name="preferred_contact"><option>Email</option><option>WhatsApp</option><option>Phone</option></select></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="whatsapp_group" style="width:auto;margin-top:4px" type="checkbox" value="Yes — please send me the WhatsApp community link"/><span>I’d like to receive the link to join the Spark &amp; Spectrum WhatsApp community.</span></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="contact_consent" required="" style="width:auto;margin-top:4px" type="checkbox" value="Yes"/><span>I’m happy for Spark &amp; Spectrum CIC to contact me about this enquiry.</span></label><button type="submit">Join founding-member list</button><input name="_captcha" type="hidden" value="false"/></form></div><main id="home">
+</section>
+<section class="top-email-signup" id="top-email-signup">
+<div class="top-email-signup-inner">
+<div>
+<div class="eyebrow">KEEP IN THE LOOP</div>
+<h3>Get programme dates and new Spark &amp; Spectrum updates</h3>
+<p>One simple email signup. Free resources remain available without joining the list.</p>
+</div>
+<form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" onsubmit="showSparkThanks()" target="formsubmit-frame">
+<input name="_subject" type="hidden" value="Spark &amp; Spectrum — Mailing list signup"/>
+<input name="_captcha" type="hidden" value="false"/>
+<input aria-label="Email address" name="email" placeholder="Email address" required="" type="email"/>
+<button type="submit">Keep me updated</button>
+</form>
+</div>
+</section>
+<main id="home">
 <section class="hero">
 <div class="container hero-grid">
 <div class="hero-copy">
@@ -1208,7 +1291,7 @@ header, .site-header, .top-nav, nav.main-nav {
 <div><span>04</span><p><strong>Replay library &amp; member extras</strong><br/>Recordings, new resources and selected event discounts.</p></div>
 </div>
 </div>
-</section>
+<div class="enquiry-card" id="membership-interest"><h3>Spark Support Hub membership</h3><form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" onsubmit="showSparkThanks()" target="formsubmit-frame"><input name="_subject" type="hidden" value="Spark &amp; Spectrum — Membership interest"/><label>Name<input name="name" required=""/></label><label>Email<input name="email" required="" type="email"/></label><label>Mobile / WhatsApp number <span style="font-weight:500">(optional)</span><input inputmode="tel" name="whatsapp" type="tel"/></label><label>Preferred contact<select name="preferred_contact"><option>Email</option><option>WhatsApp</option><option>Phone</option></select></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="whatsapp_group" style="width:auto;margin-top:4px" type="checkbox" value="Yes — please send me the WhatsApp community link"/><span>I’d like to receive the link to join the Spark &amp; Spectrum WhatsApp community.</span></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="contact_consent" required="" style="width:auto;margin-top:4px" type="checkbox" value="Yes"/><span>I’m happy for Spark &amp; Spectrum CIC to contact me about this enquiry.</span></label><button type="submit">Join founding-member list</button><input name="_captcha" type="hidden" value="false"/></form></div></section>
 <section class="section" id="community">
 <div class="container">
 <h2 class="section-title">Spark &amp; Spectrum in the Community</h2>
@@ -1314,7 +1397,6 @@ header, .site-header, .top-nav, nav.main-nav {
 <h3>Programme enquiry</h3><form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" onsubmit="showSparkThanks()" target="formsubmit-frame"><input name="_subject" type="hidden" value="Spark &amp; Spectrum — Programme enquiry"/><label>Name<input name="name" required=""/></label><label>Email<input name="email" required="" type="email"/></label><label>Mobile / WhatsApp number <span style="font-weight:500">(optional)</span><input inputmode="tel" name="whatsapp" type="tel"/></label><label>Preferred contact<select name="preferred_contact"><option>Email</option><option>WhatsApp</option><option>Phone</option></select></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="whatsapp_group" style="width:auto;margin-top:4px" type="checkbox" value="Yes — please send me the WhatsApp community link"/><span>I’d like to receive the link to join the Spark &amp; Spectrum WhatsApp community.</span></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="contact_consent" required="" style="width:auto;margin-top:4px" type="checkbox" value="Yes"/><span>I’m happy for Spark &amp; Spectrum CIC to contact me about this enquiry.</span></label><label>Programme<select name="programme"><option value="">Please choose</option><option value="Empowered Mind Circle — Tuesdays from September">Empowered Mind Circle — Tuesdays from September</option><option value="SEND Paperwork Without the Panic — Tuesdays from September">SEND Paperwork Without the Panic — Tuesdays from September</option><option value="Walk, Talk &amp; Connect">Walk, Talk &amp; Connect</option><option value="After-School Club">After-School Club</option><option value="Children &amp; Young People's Programmes">Children &amp; Young People's Programmes</option><option value="Parent / Carer Programmes &amp; Workshops">Parent / Carer Programmes &amp; Workshops</option><option value="SEND / Neurodiversity Workshops">SEND / Neurodiversity Workshops</option><option value="Sensory Response — mobile sensory vehicle hire / interest">Sensory Response — mobile sensory vehicle hire / interest</option><option value="School Programmes &amp; Support">School Programmes &amp; Support</option><option value="Staff Training / Workshops">Staff Training / Workshops</option><option value="Community or Organisation Partnership">Community or Organisation Partnership</option><option value="Sight Support Meet-up Sessions">Sight Support Meet-up Sessions</option><option value="Chai Meet-up">Chai Meet-up</option><option value="Girls' Group / Girls Code Connect">Girls' Group / Girls Code Connect</option><option value="Boys' Group — future interest">Boys' Group — future interest</option><option value="Gaming Van / mobile gaming provision">Gaming Van / mobile gaming provision</option><option value="Membership / Spark Support Hub">Membership / Spark Support Hub</option><option value="Something else">Something else</option><option value="I'm not sure what I need">I'm not sure what I need</option></select></label><label>How can we help?<textarea name="message" rows="4"></textarea></label><button type="submit">Send programme enquiry</button><input name="_captcha" type="hidden" value="false"/></form></div>
 <div class="enquiry-card" id="event-interest"><h3>Event / meet-up interest</h3><form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" onsubmit="showSparkThanks()" target="formsubmit-frame"><input name="_subject" type="hidden" value="Spark &amp; Spectrum — Event interest"/><label>Name<input name="name" required=""/></label><label>Email<input name="email" required="" type="email"/></label><label>Mobile / WhatsApp number <span style="font-weight:500">(optional)</span><input inputmode="tel" name="whatsapp" type="tel"/></label><label>Preferred contact<select name="preferred_contact"><option>Email</option><option>WhatsApp</option><option>Phone</option></select></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="whatsapp_group" style="width:auto;margin-top:4px" type="checkbox" value="Yes — please send me the WhatsApp community link"/><span>I’d like to receive the link to join the Spark &amp; Spectrum WhatsApp community.</span></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="contact_consent" required="" style="width:auto;margin-top:4px" type="checkbox" value="Yes"/><span>I’m happy for Spark &amp; Spectrum CIC to contact me about this enquiry.</span></label><label>Event or meet-up<input name="event" placeholder="e.g. Chai Meet-Up, Sight Support"/></label><button type="submit">Register event interest</button><input name="_captcha" type="hidden" value="false"/></form></div>
 <div class="enquiry-card" id="resource-interest"><h3>Resource interest / waiting list</h3><form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" onsubmit="showSparkThanks()" target="formsubmit-frame"><input name="_subject" type="hidden" value="Spark &amp; Spectrum — Resource interest"/><label>Name<input name="name" required=""/></label><label>Email<input name="email" required="" type="email"/></label><label>Mobile / WhatsApp number <span style="font-weight:500">(optional)</span><input inputmode="tel" name="whatsapp" type="tel"/></label><label>Preferred contact<select name="preferred_contact"><option>Email</option><option>WhatsApp</option><option>Phone</option></select></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="whatsapp_group" style="width:auto;margin-top:4px" type="checkbox" value="Yes — please send me the WhatsApp community link"/><span>I’d like to receive the link to join the Spark &amp; Spectrum WhatsApp community.</span></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="contact_consent" required="" style="width:auto;margin-top:4px" type="checkbox" value="Yes"/><span>I’m happy for Spark &amp; Spectrum CIC to contact me about this enquiry.</span></label><label>Resource<input name="resource" placeholder="Resource or toolkit name"/></label><button type="submit">Join resource list</button><input name="_captcha" type="hidden" value="false"/></form><p class="enquiry-note">Approved free PDFs remain available directly in the Resource Hub.</p></div>
-
 <div class="enquiry-card" id="referral-enquiry"><h3>Refer a family</h3><form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" onsubmit="showSparkThanks()" target="formsubmit-frame"><input name="_subject" type="hidden" value="Spark &amp; Spectrum — Family referral enquiry"/><label>Your name<input name="name" required=""/></label><label>Your email<input name="email" required="" type="email"/></label><label>Organisation (if relevant)<input name="organisation"/></label><label>How can we help?<textarea name="message" rows="4"></textarea></label><button type="submit">Send referral enquiry</button><input name="_captcha" type="hidden" value="false"/></form></div>
 <div class="enquiry-card" id="partner-enquiry"><h3>Schools, partners &amp; organisations</h3><form action="https://formsubmit.co/sparkandspectrumcic@gmail.com" method="POST" onsubmit="showSparkThanks()" target="formsubmit-frame"><input name="_subject" type="hidden" value="Spark &amp; Spectrum — Partnership / commissioned work"/><label>Name<input name="name" required=""/></label><label>Email<input name="email" required="" type="email"/></label><label>Mobile / phone number <span style="font-weight:500">(optional)</span><input inputmode="tel" name="phone" type="tel"/></label><label>Preferred contact<select name="preferred_contact"><option>Email</option><option>Phone</option></select></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="contact_consent" required="" style="width:auto;margin-top:4px" type="checkbox" value="Yes"/><span>I’m happy for Spark &amp; Spectrum CIC to contact me about this enquiry.</span></label><label>Mobile / phone number <span style="font-weight:500">(optional)</span><input inputmode="tel" name="phone" type="tel"/></label><label>Preferred contact<select name="preferred_contact"><option>Email</option><option>Phone</option></select></label><label style="display:flex;gap:9px;align-items:flex-start"><input name="contact_consent" required="" style="width:auto;margin-top:4px" type="checkbox" value="Yes"/><span>I’m happy for Spark &amp; Spectrum CIC to contact me about this enquiry.</span></label><label>Organisation<input name="organisation"/></label><label>Enquiry type<select name="enquiry_type"><option>Partner with us</option><option>Invite us to your setting</option><option>Support / sponsor a programme</option><option>Commissioned work</option><option>Other</option></select></label><label>Tell us more<textarea name="message" rows="4"></textarea></label><button type="submit">Send partnership enquiry</button><input name="_captcha" type="hidden" value="false"/></form></div>
 </div>
