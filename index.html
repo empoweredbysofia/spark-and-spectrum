@@ -88,7 +88,12 @@
         #fff;
     }
     .hero-grid{
-      display:grid; grid-template-columns:1.08fr .56fr .95fr; gap:34px; align-items:center;
+      display:grid; grid-template-columns:minmax(0,1.05fr) minmax(360px,.95fr);
+      gap:clamp(34px,5vw,72px); align-items:center;
+    }
+    .hero-eyebrow{
+      display:inline-flex;align-items:center;gap:9px;margin-bottom:18px;
+      color:var(--purple);font-size:.8rem;font-weight:850;letter-spacing:.11em;
     }
     .hero-copy h1{
       margin:0 0 20px; font-family:Georgia, "Times New Roman", serif;
@@ -98,6 +103,8 @@
     .hero-copy h1 .purple{color:var(--purple)}
     .hero-copy h1 .green{color:var(--green)}
     .hero-copy p{font-size:1.08rem; max-width:620px; color:#263150}
+    .hero-proof{display:flex;gap:10px 18px;flex-wrap:wrap;margin-top:20px;color:#535B70;font-size:.88rem;font-weight:700}
+    .hero-proof span::before{content:"✦";color:var(--orange);margin-right:7px}
     .actions{display:flex; gap:14px; margin-top:28px; flex-wrap:wrap}
     .btn{
       display:inline-flex; align-items:center; justify-content:center; gap:10px;
@@ -109,6 +116,17 @@
     .btn.purple{background:var(--purple); color:#fff}
     .btn.green{background:var(--green); color:#fff}
     .btn.outline{border-color:var(--purple); color:var(--purple); background:#fff}
+
+    .hero-feature{
+      position:relative;height:440px;border-radius:26px;overflow:hidden;
+      box-shadow:0 22px 55px rgba(25,38,78,.16);background:#ECE8EF;
+    }
+    .hero-feature .real-photo{object-position:center 40%}
+    .hero-feature-label{
+      position:absolute;left:18px;right:18px;bottom:18px;padding:14px 17px;
+      border-radius:14px;background:rgba(16,37,74,.9);color:#fff;font-weight:800;
+      backdrop-filter:blur(8px);box-shadow:0 8px 24px rgba(0,0,0,.16);
+    }
 
     .photo-placeholder{
       background:linear-gradient(135deg,#F1F1F1,#E4E4E4);
@@ -295,8 +313,8 @@
       }
       .nav-links.open{display:flex}
       .menu-toggle{display:block}
-      .hero-grid{grid-template-columns:1fr 1fr}
-      .hero-copy{grid-column:1/-1}
+      .hero-grid{grid-template-columns:1fr 1fr;gap:30px}
+      .hero-copy{grid-column:auto}
       .programmes{grid-template-columns:repeat(2,1fr)}
       .programme:last-child{grid-column:span 2}
       .what-grid{grid-template-columns:repeat(2,1fr)}
@@ -319,6 +337,8 @@
       .hero-grid{grid-template-columns:1fr}
       .hero-copy{grid-column:auto}
       .hero-copy h1{font-size:clamp(2.25rem,12vw,3.55rem)}
+      .hero-feature{height:auto;min-height:0;aspect-ratio:4/3;border-radius:20px}
+      .hero-feature-label{left:12px;right:12px;bottom:12px;font-size:.9rem;padding:12px 14px}
       .photo-placeholder{min-height:280px}
       .launch-card{padding:22px}
       .mission{padding:34px 24px}
@@ -454,27 +474,19 @@
 <section class="hero">
 <div class="container hero-grid">
 <div class="hero-copy">
-<div aria-hidden="true" class="spark" style="margin-bottom:18px"></div>
-<h1>Supporting every <span class="orange">spark.</span><br/>Celebrating every <span class="purple">spec</span><span class="blue">tr</span><span class="green">um.</span></h1>
-<p>
-          Spark &amp; Spectrum CIC provides practical, accessible and culturally sensitive support for
-          SEND and neurodivergent children, young people and their families.
-        </p>
+<div class="hero-eyebrow"><span aria-hidden="true" class="spark small"></span> SEND • NEURODIVERSITY • COMMUNITY</div>
+<h1>Support that understands the <span class="orange">whole family.</span></h1>
+<p>Practical guidance, community programmes and culturally sensitive support for children, young people and the people who care for them.</p>
 <div class="actions">
-<a class="btn orange" href="#about">About Us <span class="spark small" style="background:white"></span></a>
-<a class="btn purple" href="#programmes">Our Programmes <span class="spark small" style="background:white"></span></a>
+<a class="btn orange" href="#what">Find Support <span class="spark small" style="background:white"></span></a>
+<a class="btn purple" href="#programmes">Explore Our Programmes <span class="spark small" style="background:white"></span></a>
 </div>
+<div class="hero-proof"><span>Led by lived experience</span><span>Practical support</span><span>Based in Derby</span></div>
 </div>
-<!-- Real Spark & Spectrum photograph. Original image is not edited; CSS crops display only. -->
-<div class="hero-real portrait-safe">
-<img alt="Spark &amp; Spectrum team at a community event" class="real-photo" src="images/archive-6ec730276b0b.jpeg" style="object-position:center 34%"/>
+<div class="hero-feature">
+<img alt="Families, community members and local leaders gathered at Spark &amp; Spectrum in Derby" class="real-photo" src="images/community-gathering.jpeg"/>
+<div class="hero-feature-label">Real people. Real support. Stronger connections.</div>
 </div>
-<aside class="launch-card launch-recap">
-<h3><span class="spark small"></span> Our opening day <span class="spark small"></span></h3>
-<img src="images/launch-mayor-founders.jpeg" alt="Spark &amp; Spectrum founders with the Mayor of Derby outside their centre" width="496" height="368"/>
-<p>We opened our doors in September 2026 with our families, friends and community beside us. It was a special beginning for the work we are now building together.</p>
-<a class="btn green" href="#community">See our community photos</a>
-</aside>
 </div>
 </section>
 <section class="mission-wrap" id="about">
@@ -681,7 +693,6 @@
 <div class="community-gallery">
 <div class="gallery-photo"><img alt="Spark &amp; Spectrum team and guests with the Mayor of Derby outside the centre on opening day" class="real-photo" src="images/launch-mayor-team.jpeg" loading="lazy" style="object-position:center 35%"/></div>
 <div class="gallery-photo"><img alt="Spark &amp; Spectrum founders at their launch celebration" class="real-photo" src="images/launch-founders.jpeg" loading="lazy" style="object-position:center 30%"/></div>
-<div class="gallery-photo"><img alt="People gathered for a Spark &amp; Spectrum community meet-up" class="real-photo" src="images/community-gathering.jpeg" loading="lazy" style="object-position:center 40%"/></div>
 <div class="gallery-photo"><img alt="Participants taking part in a Spark &amp; Spectrum support session" class="real-photo" src="images/community-session.jpeg" loading="lazy" style="object-position:center 40%"/></div>
 
 <div class="gallery-photo"><img alt="Spark &amp; Spectrum community work" class="real-photo" src="images/archive-40d2d3ada713.jpeg" style="object-position:center 28%"/></div>
