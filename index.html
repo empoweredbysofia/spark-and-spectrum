@@ -484,6 +484,19 @@
       .btn,.gallery-photo .real-photo{transition:none}
     }
 
+
+    /* Show the whole launch photograph without cropping people. */
+    .hero{padding:32px 0}
+    .hero-feature{height:440px;background:var(--cream)}
+    .hero-feature .real-photo{object-fit:contain;object-position:center}
+    .gallery-photo.launch-ribbon{grid-row:span 2;background:var(--cream)}
+    .gallery-photo.launch-ribbon .real-photo{object-fit:contain;object-position:center}
+    @media(max-width:640px){
+      .hero{padding:20px 0 28px}
+      .hero-grid{gap:22px}
+      .hero-feature{grid-row:1;height:clamp(260px,85vw,360px);aspect-ratio:auto}
+      .gallery-photo.launch-ribbon{grid-row:auto;height:auto;aspect-ratio:3/4}
+    }
 </style>
 
 <style>
@@ -520,7 +533,7 @@
 <div class="hero-proof"><span>Led by lived experience</span><span>Practical support</span><span>Based in Derby</span></div>
 </div>
 <div class="hero-feature">
-<img alt="Families, community members and local leaders gathered at Spark &amp; Spectrum in Derby" class="real-photo" src="images/community-gathering.jpeg" fetchpriority="high" decoding="async"/>
+<img alt="Spark &amp; Spectrum team and launch guests outside the centre in Derby" class="real-photo" src="images/launch-group-optimised.svg" fetchpriority="high" decoding="async"/>
 
 </div>
 </div>
@@ -727,6 +740,7 @@
 <h2 class="section-title">Spark &amp; Spectrum in the Community</h2>
 <p class="gallery-heading">From our opening day with the Mayor of Derby to the conversations and sessions that followed, these are some of the people and moments behind our work.</p>
 <div class="community-gallery">
+<div class="gallery-photo launch-ribbon"><img alt="Children, the Spark &amp; Spectrum team and the Mayor of Derby cutting the ribbon at the launch" class="real-photo" src="images/launch-ribbon-optimised.svg" loading="lazy"/></div>
 <div class="gallery-photo"><img alt="Spark &amp; Spectrum team and guests with the Mayor of Derby outside the centre on opening day" class="real-photo" src="images/launch-mayor-team.jpeg" loading="lazy" style="object-position:center 35%"/></div>
 <div class="gallery-photo"><img alt="Spark &amp; Spectrum founders at their launch celebration" class="real-photo" src="images/launch-founders.jpeg" loading="lazy" style="object-position:center 30%"/></div>
 <div class="gallery-photo"><img alt="Participants taking part in a Spark &amp; Spectrum support session" class="real-photo" src="images/community-session.jpeg" loading="lazy" style="object-position:center 40%"/></div>
