@@ -528,6 +528,17 @@
       .programme-photo{height:clamp(300px,100vw,440px)}
       .programme-photo .real-photo{height:100%;object-fit:contain}
     }
+
+    /* Rectangular launch image and consistent programme action placement. */
+    .hero-feature{height:auto;aspect-ratio:900/680;background:transparent}
+    .hero-feature .real-photo{width:100%;height:100%;max-height:none}
+    .programme-photo{flex-shrink:0}
+    .programme-body{flex:1;display:flex;flex-direction:column}
+    .programme-body p{margin-bottom:20px}
+    .programme .programme-body a{margin-top:auto;align-self:stretch;justify-content:center;min-height:44px;text-align:center}
+    @media(max-width:640px){
+      .hero-feature{height:auto;aspect-ratio:900/680}
+    }
 </style>
 
 <style>
