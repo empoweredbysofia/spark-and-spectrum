@@ -498,6 +498,27 @@
       .hero-feature{grid-row:1;height:clamp(260px,85vw,360px);aspect-ratio:auto}
       .gallery-photo.launch-ribbon{grid-row:auto;height:auto;aspect-ratio:3/4}
     }
+
+    .support-options{padding:12px 0 40px}
+    .support-options h2{font:700 clamp(1.65rem,3vw,2.2rem) Georgia,serif;color:var(--navy);margin:0 0 22px}
+    .support-options-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+    .support-option{display:flex;flex-direction:column;padding:24px 22px;border:1px solid var(--line);border-top:4px solid var(--navy);border-radius:16px;background:#fff;transition:box-shadow .2s}
+    .support-option:hover{box-shadow:var(--shadow)}
+    .support-option:focus-visible{outline:3px solid var(--orange);outline-offset:4px}
+    .wellbeing-option{border-top-color:var(--purple);background:#FBF8FD}
+    .send-option{border-top-color:var(--blue)}
+    .groups-option{border-top-color:var(--green)}
+    .option-kicker{font-size:.72rem;font-weight:800;color:var(--purple);letter-spacing:.035em}
+    .support-option h3{font:700 1.28rem Georgia,serif;color:var(--navy);line-height:1.25;margin:12px 0 10px}
+    .support-option p{font-size:.93rem;color:var(--muted);margin:0 0 22px}
+    .option-action{margin-top:auto;font-weight:800;font-size:.88rem;color:var(--navy)}
+    .wellbeing-intro{margin-top:28px;padding:30px;border-radius:20px;background:var(--cream);display:grid;grid-template-columns:1.5fr 1fr;gap:28px;align-items:center}
+    .wellbeing-intro h2{margin:10px 0 14px}
+    .wellbeing-intro p{color:#444C64;margin:0 0 12px}
+    .wellbeing-actions{display:flex;flex-direction:column;gap:12px}
+    .programme-em h3{color:var(--navy)!important}
+    @media(max-width:980px){.support-options-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:640px){.support-options-grid,.wellbeing-intro{grid-template-columns:1fr}.support-options{padding:0 0 28px}.support-option{padding:20px}.wellbeing-intro{padding:24px;gap:12px}.support-options h2{font-size:1.7rem}}
 </style>
 
 <style>
@@ -526,9 +547,9 @@
 <div class="hero-copy">
 <div class="hero-eyebrow"><span aria-hidden="true" class="spark small"></span> SEND • NEURODIVERSITY • COMMUNITY</div>
 <h1>Support that understands the <span class="orange">whole family.</span></h1>
-<p>Practical guidance, community programmes and culturally sensitive support for children, young people and the people who care for them.</p>
+<p>Wellbeing support, practical SEND guidance and welcoming groups for children, young people and families in Derby.</p>
 <div class="actions">
-<a class="btn orange" href="#what">Find Support <span class="spark small" style="background:white"></span></a>
+<a class="btn orange" href="#support-options">Find the right support <span class="spark small" style="background:white"></span></a>
 <a class="btn purple" href="#programmes">Explore Our Programmes <span class="spark small" style="background:white"></span></a>
 </div>
 <div class="hero-proof"><span>Led by lived experience</span><span>Practical support</span><span>Based in Derby</span></div>
@@ -536,6 +557,22 @@
 <div class="hero-feature">
 <img alt="Spark &amp; Spectrum team and launch guests outside the centre in Derby" class="real-photo" src="images/launch-group-optimised.svg" fetchpriority="high" decoding="async"/>
 
+</div>
+</div>
+</section>
+
+<section class="support-options" id="support-options" aria-labelledby="support-options-title">
+<div class="container">
+<h2 id="support-options-title">What would help you today?</h2>
+<div class="support-options-grid">
+<a class="support-option wellbeing-option" href="#wellbeing"><span class="option-kicker">EmpowerED Minds by Sofia</span><h3>Support for my wellbeing</h3><p>Space to pause, feel heard and understand yourself better.</p><span class="option-action">Explore wellbeing support →</span></a>
+<a class="support-option send-option" href="https://form.jotform.com/262165407296057"><span class="option-kicker">SEND support</span><h3>Help with SEND</h3><p>Tell us what is happening and where you need guidance, including paperwork and school support.</p><span class="option-action">Start a support enquiry →</span></a>
+<a class="support-option groups-option" href="#programmes"><span class="option-kicker">Community connection</span><h3>Find a group or activity</h3><p>Explore opportunities to connect, learn and take part with other families.</p><span class="option-action">Explore our programmes →</span></a>
+<a class="support-option partner-option" href="#professional-support"><span class="option-kicker">Schools &amp; organisations</span><h3>Work with us</h3><p>Refer a family, commission a programme or explore a partnership.</p><span class="option-action">See ways to work together →</span></a>
+</div>
+<div class="wellbeing-intro" id="wellbeing">
+<div><span class="option-kicker">EmpowerED Minds by Sofia</span><h2>A little space for you, too.</h2><p>When you spend so much time supporting others, your own needs can slip down the list. EmpowerED Minds Circle offers a welcoming space to pause, reflect, feel heard and build your emotional capacity.</p><p>Explore the Circle and Sofia’s wider wellbeing support, or contact us about Pause &amp; Create.</p></div>
+<div class="wellbeing-actions"><a class="btn purple" href="https://www.empoweredmindsbysofia.co.uk">Explore EmpowerED Minds</a><a class="btn outline" href="mailto:hello@sparkandspectrum.org.uk?subject=Wellbeing%20sessions%20enquiry">Ask about our sessions</a></div>
 </div>
 </div>
 </section>
@@ -630,20 +667,20 @@
 <div class="container">
 <h2 class="section-title">Our Programmes</h2>
 <div class="programmes">
+<article class="programme programme-em">
+<div class="programme-photo"><img alt="Spark &amp; Spectrum group support session" class="real-photo" src="images/archive-e313486cb359.jpeg" style="object-position:center 25%"/></div>
+<div class="programme-body">
+<h3>EmpowerED Minds Circle</h3>
+<p>A welcoming space to pause, reflect, feel heard and build your emotional capacity.</p>
+<a href="#wellbeing">Find Out More ✦</a>
+</div>
+</article>
 <article class="programme">
 <div class="programme-photo"><img alt="SEND paperwork prepared for a Spark &amp; Spectrum support session" class="real-photo" src="images/send-paperwork-session.jpeg" style="object-position:center 56%"/></div>
 <div class="programme-body">
 <h3>SEND Paperwork Without the Panic</h3>
 <p>Practical help with forms, EHCPs and SEND processes.</p>
-<a href="#contact">Find Out More ✦</a>
-</div>
-</article>
-<article class="programme">
-<div class="programme-photo"><img alt="Spark &amp; Spectrum group support session" class="real-photo" src="images/archive-e313486cb359.jpeg" style="object-position:center 25%"/></div>
-<div class="programme-body">
-<h3>Empowered Mind Circle</h3>
-<p>A reflective, creative SEND coffee morning for parents and carers to connect, pause and feel supported.</p>
-<a href="#contact">Find Out More ✦</a>
+<a href="https://form.jotform.com/262165407296057">Start an enquiry ✦</a>
 </div>
 </article>
 <article class="programme">
@@ -781,7 +818,7 @@
 </div>
 </article>
 </div>
-<div class="professional-box" style="margin-top:60px">
+<div class="professional-box" id="professional-support" style="margin-top:60px">
 <div>
 <h2>For professionals &amp; organisations</h2>
 <p>If you work with children, young people or families, there are several ways to connect with Spark &amp; Spectrum. We welcome conversations with schools, SEND professionals, health services, community organisations and local partners.</p>
