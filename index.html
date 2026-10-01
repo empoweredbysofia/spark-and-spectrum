@@ -551,6 +551,13 @@
       .wellbeing-intro{grid-template-columns:1fr}
       .wellbeing-portrait{width:220px;height:220px;justify-self:center}
     }
+
+    /* Centre wrapped labels consistently in the opening buttons. */
+    .hero .actions{align-items:stretch}
+    .hero .actions .btn{text-align:center;justify-content:center;align-items:center}
+    @media(max-width:640px){
+      .hero .actions .btn{width:100%;min-height:56px;height:100%;line-height:1.25;text-align:center}
+    }
 </style>
 
 <style>
