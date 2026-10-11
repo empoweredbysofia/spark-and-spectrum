@@ -558,6 +558,21 @@
     @media(max-width:640px){
       .hero .actions .btn{width:100%;min-height:56px;height:100%;line-height:1.25;text-align:center}
     }
+
+    .uploaded-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+    .uploaded-gallery figure{margin:0;background:var(--cream);border-radius:16px;overflow:hidden}
+    .uploaded-gallery img{display:block;width:100%;height:320px;object-fit:contain;background:var(--cream)}
+    .uploaded-gallery figcaption{padding:14px 18px;color:var(--navy);font-size:.92rem}
+    .commission-posters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:30px}
+    .commission-poster{background:var(--cream);border-radius:16px;overflow:hidden;padding-bottom:22px}
+    .commission-poster img{display:block;width:100%;height:auto}
+    .commission-poster h3,.commission-poster p,.commission-poster>a:last-child{margin:16px 20px}
+    .commission-poster>a:last-child{display:inline-block;color:var(--navy);font-weight:800;min-height:44px}
+    .upcoming-event{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:36px;align-items:center;background:var(--cream);padding:28px;border-radius:20px}
+    .upcoming-event img{display:block;width:100%;height:auto;border-radius:8px}
+    .upcoming-event h3{font-size:1.65rem;color:var(--navy)}
+    @media(max-width:900px){.uploaded-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:640px){.uploaded-gallery,.commission-posters,.upcoming-event{grid-template-columns:1fr}.uploaded-gallery img{height:auto;max-height:520px;object-fit:contain}.upcoming-event{padding:20px;gap:20px}}
 </style>
 
 <style>
@@ -577,7 +592,7 @@
 <img alt="Spark &amp; Spectrum CIC logo" src="images/archive-8acff62a202e.jpeg"/>
 </a>
 <button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" class="menu-toggle">☰</button>
-<nav aria-label="Primary navigation" class="nav-links" id="primary-navigation"><a class="active" href="#home">Home</a><a href="#about">About</a><a href="#what">What We Do</a><a href="#programmes">Programmes</a><a href="#resources">Resources</a><a href="#membership">Membership</a><a href="#work">Work With Us</a><a href="#team">Our Team</a><a href="#contact">Contact</a></nav>
+<nav aria-label="Primary navigation" class="nav-links" id="primary-navigation"><a class="active" href="#home">Home</a><a href="#about">About</a><a href="#what">What We Do</a><a href="#upcoming-events">What’s On</a><a href="#programmes">Programmes</a><a href="#resources">Resources</a><a href="#membership">Membership</a><a href="#work">Work With Us</a><a href="#team">Our Team</a><a href="#contact">Contact</a></nav>
 </div>
 </header>
 <main id="home">
@@ -703,6 +718,7 @@
 </div>
 </div>
 </section>
+<section class="section" id="upcoming-events"><div class="container"><h2 class="section-title">Upcoming event</h2><article class="upcoming-event"><a href="images/st-james-event-poster.jpg" target="_blank" rel="noopener" aria-label="View the St James’ event poster full size"><img src="images/st-james-event-poster.jpg" alt="EmpowerED Minds at St James’ Centre event poster" loading="lazy"/></a><div><span class="option-kicker">EmpowerED Minds with Spark &amp; Spectrum CIC</span><h3>Your emotions are not your identity.</h3><p>An interactive emotional capacity session with Sofia Iqbal.</p><p><strong>Friday 27 November 2026 · 11 am–12 pm</strong><br/>St James’ Centre<br/>Malcolm Street, Derby, DE23 8LU</p><a class="btn purple" href="mailto:sparkandspectrumcic@gmail.com?subject=St%20James%20event%20enquiry">Ask about attending</a></div></article></div></section>
 <section class="section" id="programmes" style="padding-top:10px">
 <div class="container">
 <h2 class="section-title">Our Programmes</h2>
@@ -813,20 +829,12 @@
 </div>
 </div>
 </section>
+<section class="section" id="commission-programmes"><div class="container"><h2 class="section-title">Bring a programme to your organisation</h2><p>Explore programmes for community groups, family hubs, women’s services and other settings. Contact us to discuss funding, commissioning or hosting.</p><div class="commission-posters"><article class="commission-poster"><a href="images/empowered-circle-poster.jpg" target="_blank" rel="noopener" aria-label="View EmpowerED Minds Circle poster full size"><img src="images/empowered-circle-poster.jpg" alt="EmpowerED Minds Circle programme poster" loading="lazy"/></a><h3>EmpowerED Minds Circle</h3><p>A six-week programme for women to understand emotions, build emotional capacity and strengthen connection.</p><a href="mailto:sparkandspectrumcic@gmail.com?subject=Programme%20commissioning%20enquiry">Enquire about this programme →</a></article><article class="commission-poster"><a href="images/send-paperwork-poster.jpg" target="_blank" rel="noopener" aria-label="View SEND Paperwork Without Panic poster full size"><img src="images/send-paperwork-poster.jpg" alt="SEND Paperwork Without Panic programme poster" loading="lazy"/></a><h3>SEND Paperwork Without Panic</h3><p>Six weeks of practical SEND support, from noticing signs to organising paperwork and understanding next steps.</p><a href="mailto:sparkandspectrumcic@gmail.com?subject=Programme%20commissioning%20enquiry">Enquire about this programme →</a></article><article class="commission-poster"><a href="images/pause-create-poster.jpg" target="_blank" rel="noopener" aria-label="View Pause &amp; Create poster full size"><img src="images/pause-create-poster.jpg" alt="Pause &amp; Create programme poster" loading="lazy"/></a><h3>Pause &amp; Create</h3><p>Guided creative wellbeing sessions for women, with art-based breathing, breath drawing and relaxation.</p><a href="mailto:sparkandspectrumcic@gmail.com?subject=Programme%20commissioning%20enquiry">Enquire about this programme →</a></article></div></div></section>
 <section class="section" id="community">
 <div class="container">
 <h2 class="section-title">Spark &amp; Spectrum in the Community</h2>
 <p class="gallery-heading">From our opening day with the Mayor of Derby to the conversations and sessions that followed, these are some of the people and moments behind our work.</p>
-<div class="community-gallery">
-<div class="gallery-photo launch-ribbon"><img alt="Children, the Spark &amp; Spectrum team and the Mayor of Derby cutting the ribbon at the launch" class="real-photo" src="images/launch-ribbon-optimised.svg" loading="lazy"/></div>
-<div class="gallery-photo"><img alt="Spark &amp; Spectrum team and guests with the Mayor of Derby outside the centre on opening day" class="real-photo" src="images/launch-mayor-team.jpeg" loading="lazy" style="object-position:center 35%"/></div>
-<div class="gallery-photo"><img alt="Spark &amp; Spectrum founders at their launch celebration" class="real-photo" src="images/launch-founders.jpeg" loading="lazy" style="object-position:center 30%"/></div>
-<div class="gallery-photo"><img alt="Participants taking part in a Spark &amp; Spectrum support session" class="real-photo" src="images/community-session.jpeg" loading="lazy" style="object-position:center 40%"/></div>
-
-<div class="gallery-photo"><img alt="Spark &amp; Spectrum community work" class="real-photo" src="images/archive-40d2d3ada713.jpeg" style="object-position:center 28%"/></div>
-<div class="gallery-photo"><img alt="Spark &amp; Spectrum community stall" class="real-photo" src="images/archive-7249947aec12.jpeg" style="object-position:center 34%"/></div>
-<div class="gallery-photo"><img alt="Spark &amp; Spectrum session in progress" class="real-photo" src="images/archive-c660253ec494.jpeg" style="object-position:center 22%"/></div>
-</div>
+<div class="uploaded-gallery"><figure><a href="images/sofia-session.jpg" target="_blank" rel="noopener" aria-label="View photograph: Sofia preparing a session with worksheets laid out on the tables."><img src="images/sofia-session.jpg" alt="Sofia at the front of a room beside a presentation screen and tables with worksheets" loading="lazy"/></a><figcaption>Sofia preparing a session with worksheets laid out on the tables.</figcaption></figure><figure><a href="images/launch-guests.jpg" target="_blank" rel="noopener" aria-label="View photograph: Welcoming guests to Spark &amp; Spectrum."><img src="images/launch-guests.jpg" alt="Spark and Spectrum team members and guests outside the centre" loading="lazy"/></a><figcaption>Welcoming guests to Spark &amp; Spectrum.</figcaption></figure><figure><a href="images/launch-celebration.jpg" target="_blank" rel="noopener" aria-label="View photograph: Celebrating the launch together."><img src="images/launch-celebration.jpg" alt="Three women gathered beside a cake and programme display" loading="lazy"/></a><figcaption>Celebrating the launch together.</figcaption></figure><figure><a href="images/community-conversations.jpg" target="_blank" rel="noopener" aria-label="View photograph: Conversations with community partners."><img src="images/community-conversations.jpg" alt="People talking indoors beside the Spark and Spectrum display" loading="lazy"/></a><figcaption>Conversations with community partners.</figcaption></figure><figure><a href="images/launch-community.jpg" target="_blank" rel="noopener" aria-label="View photograph: Our team and guests on launch day."><img src="images/launch-community.jpg" alt="A group gathered outside the centre, including the Mayor of Derby" loading="lazy"/></a><figcaption>Our team and guests on launch day.</figcaption></figure><figure><a href="images/team-launch-display.jpg" target="_blank" rel="noopener" aria-label="View photograph: Sharing our programmes and resources."><img src="images/team-launch-display.jpg" alt="Three women standing behind a table with leaflets and a cake" loading="lazy"/></a><figcaption>Sharing our programmes and resources.</figcaption></figure></div>
 </div>
 </section>
 <section class="section" id="team" style="padding-top:12px">
